@@ -1,0 +1,5 @@
+__pycache__
+*warc.gz
+.idea
+.DS_Store
+Tokens
