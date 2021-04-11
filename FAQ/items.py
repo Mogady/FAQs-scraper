@@ -10,7 +10,7 @@ import scrapy
 
 class FAQItem(scrapy.Item):
     # define the fields for your item here like:
-    html_url = scrapy.Field(serializer=str)
+    url = scrapy.Field(serializer=str)
     company = scrapy.Field(serializer=str)
     category = scrapy.Field(serializer=str)
     question = scrapy.Field(serializer=str)
