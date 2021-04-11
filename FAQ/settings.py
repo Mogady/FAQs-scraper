@@ -33,14 +33,12 @@ DOWNLOAD_TIMEOUT = 20
 DOWNLOAD_DELAY = 2
 
 # Disable cookies (enabled by default)
-COOKIES_ENABLED = False
+COOKIES_ENABLED = True
 
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'FAQ.middlewares.RandomUserAgentMiddleware': 400,
     'FAQ.middlewares.LoadingMiddleware': 500,
 }
 
@@ -56,21 +54,3 @@ MONGO_DB_ENABLED = True
 MONGO_DB_CONNECTION = 'address'
 MONGO_DB_NAME = 'db_name'
 
-USER_AGENT_LIST = [
-    ('Mozilla/5.0 (X11; Linux x86_64) '
-     'AppleWebKit/537.36 (KHTML, like Gecko) '
-     'Chrome/61.0.3163.91 '
-     'Safari/537.36'),  # chrome
-    ('Mozilla/5.0 (X11; Linux x86_64) '
-     'AppleWebKit/537.36 (KHTML, like Gecko) '
-     'Chrome/63.0.3239.108 '
-     'Safari/537.36'),  # chrome
-    ('Mozilla/5.0 (Macintosh; '
-     'Intel Mac OS X 10_15_1) '
-     'AppleWebKit/537.36 (KHTML, like Gecko) '
-     'Chrome/81.0.4044.138 Safari/537.36'),
-    ('Mozilla/5.0 (Macintosh; '
-     'Intel Mac OS X 10_15_1) '
-     'AppleWebKit/537.36 '
-     '(KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36')
-]
