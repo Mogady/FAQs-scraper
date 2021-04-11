@@ -9,7 +9,7 @@ def validate_doc(document, company, logger):
                   "answer": {
                       "$ref": "#/definitions/non-empty-string"
                   },
-                  "raw_question": {
+                  "question": {
                       "$ref": "#/definitions/non-empty-string",
                   },
                   "company": {
@@ -24,7 +24,7 @@ def validate_doc(document, company, logger):
 
                   }
               },
-              "required": ["answer", "raw_question", "company", "category", "html_url"],
+              "required": ["answer", "question", "company", "category", "html_url"],
               "definitions": {
                   "non-empty-string": {
                       "type": "string",
