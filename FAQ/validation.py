@@ -24,7 +24,7 @@ def validate_doc(document, company, logger):
 
                   }
               },
-              "required": ["answer", "question", "company", "category", "html_url"],
+              "required": ["answer", "question", "company", "category", "url"],
               "definitions": {
                   "non-empty-string": {
                       "type": "string",
