@@ -48,9 +48,4 @@ ITEM_PIPELINES = {
     'FAQ.pipelines.DropPipeline': 200,
     'FAQ.pipelines.JsonWriterPipeline': 300,
 }
-
-# # Custom settings for FAQ DB
-MONGO_DB_ENABLED = True
-MONGO_DB_CONNECTION = 'address'
-MONGO_DB_NAME = 'db_name'
-
+USER_AGENT = "Scrapy/VERSION (+https://scrapy.org)"
