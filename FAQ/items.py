@@ -13,7 +13,7 @@ class FAQItem(scrapy.Item):
     html_url = scrapy.Field(serializer=str)
     company = scrapy.Field(serializer=str)
     category = scrapy.Field(serializer=str)
-    raw_question = scrapy.Field(serializer=str)
+    question = scrapy.Field(serializer=str)
     answer = scrapy.Field(serializer=str)
 
 
